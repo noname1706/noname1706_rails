@@ -1,7 +1,19 @@
 source 'https://rubygems.org'
 
+ruby '1.9.3'
+
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.0.2'
+
+
+#group :development do
+#  gem 'sqlite3', '3.8.2'
+#end
+
+group :production do
+  gem 'pg', '0.15.1'
+  gem 'rails_12factor', '0.0.2'
+end
 
 # Use sqlite3 as the database for Active Record
 gem 'sqlite3'
